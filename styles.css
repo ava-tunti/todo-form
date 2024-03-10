@@ -100,3 +100,17 @@ body {
   height: 2.25em;
   font-size: 24px;
 }
+
+.remove-btn {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #ff4747;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #ff6161;
+}
