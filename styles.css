@@ -1,0 +1,117 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  background: #209cee;
+  padding: 30px;
+  height: 100vh;
+}
+
+.todo-list{
+  background: #e8e8e8;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 400px;
+}
+
+.todo{
+  background: #fff;
+  box-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
+  padding: 3px 10px;
+  font-size: 24px;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input{
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 1rem;
+  height: 2.25em;
+  font-size: 24px;
+} */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F0FFF0; /* Honeydew background for a soft spring vibe */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  background: #5cdb95; /* Soft turquoise for the app background */
+  color: #05386b; /* Dark blue for contrasting text */
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centering content */
+}
+
+.todo-list {
+  background: #8ee4af; /* Lighter shade of turquoise for the list */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%; /* Makes sure it's responsive */
+}
+
+.todo {
+  background: #edf5e1; /* Very light green, almost white, for individual todos */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  font-size: 18px; /* Adjusted for readability */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.todo:hover {
+  transform: translateY(-2px); /* Slight raise effect on hover */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #379683; /* Turquoise border for the input */
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px; /* Space between input and list */
+  font-size: 16px;
+  color: #05386b; /* Dark blue text for contrast */
+}
+
+/* Placeholder styling */
+.input::placeholder {
+  color: #379683;
+  opacity: 0.7;
+}
