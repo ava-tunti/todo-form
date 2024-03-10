@@ -55,62 +55,73 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f2f2f2; /* more subtle background color */
+  background-color: #fffbe7; /* soft yellow background */
 }
 
 .app {
-  background: #fff; /* white background */
-  padding: 30px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; /* center contents horizontally */
-}
-
-.header {
-  margin-bottom: 30px; /* add some space below the header */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .todo-list {
-  background: #e8e8e8;
-  border-radius: 4px;
-  padding: 5px;
+  width: 100%;
   max-width: 400px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .todo {
-  background: #fff;
-  box-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
-  padding: 3px 10px;
-  font-size: 24px;
-  margin-bottom: 6px;
-  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: #fef9e7; /* lighter yellow for todo items */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 20px; /* rounded edges for todo items */
+  font-size: 18px;
+}
+
+.todo:hover {
+  background-color: #f6f3e4; /* slightly darker on hover */
+}
+
+.input, button {
+  border: 2px solid #ffc107; /* yellow border */
+  background-color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px; /* rounded edges */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .input {
   width: 100%;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 4px;
-  box-shadow: none;
-  padding: 1rem;
-  height: 2.25em;
-  font-size: 24px;
+  margin-bottom: 20px; /* space between input and todo list */
 }
 
-.remove-btn {
-  padding: 5px 10px;
-  margin-left: 10px;
-  background-color: #ff4747;
-  color: white;
-  border: none;
-  border-radius: 5px;
+button {
   cursor: pointer;
+  background-color: #ffc107; /* yellow background for button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-left: 10px; /* space between text input and button */
 }
 
-.remove-btn:hover {
-  background-color: #ff6161;
+button:hover {
+  background-color: #e0a800; /* darker yellow on hover */
+}
+
+/* Additional styling for centering the "ToDo" header */
+h1 {
+  text-align: center;
+  color: #333; /* Dark text for contrast */
+  margin-bottom: 20px; /* Space above the todo list */
 }
